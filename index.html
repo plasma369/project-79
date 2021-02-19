@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project 80</title>
+    </head>
+
+    <body>
+        <h1>Make pragraphs from input boxes suing join function</h1>
+        <br><br>
+
+        <span>
+            <div>
+                <span>1. </span>
+                <input type="text" id="para1_input_box_1" placeholder="Input Box 1">
+                <br><br>
+                <span>2. </span>
+                <input type="text" id="para1_input_box_2" placeholder="Input Box 2">
+                <br>
+                <button onclick="getParagraph1()">Get Paragraph</button>
+                <br><br>
+                <h2 id="Para1"></h2>
+            </div>
+
+            <div>
+                <span>1. </span>
+                <input type="text" id="para2_input_box_1" placeholder="Input Box 1">
+                <br><br>
+                <span>2. </span>
+                <input type="text" id="para2_input_box_2" placeholder="Input Box 2">
+                <br>
+                <button onclick="getParagraph2();">Get Paragraph</button>
+                <br><br>
+                <h3 id="Para2"></h3>
+            </div>
+        </span>
+    </body>
+</html>
+
+<script>
+    function getParagraph1()
+    {
+        var inputs = [];
+
+        for (var i = 1 ; i <=2 ; i++)
+        {
+            inputs.push(document.getElementById("para1_input_box_" + i).value);
+            console.log(inputs);
+        }
+
+        var paragraph1 = (inputs).1.join(inputs).2;
+        document.getElementById("Para1") = paragraph1
+    }
+
+    function getParagraph2()
+    {
+        var inputs = [];
+
+        for (var i = 1 ; i <=2 ; i++)
+        {
+            inputs.push(document.getElementById("para1_input_box_" + i).value);
+            console.log(inputs);
+        }
+
+        var paragraph1 = (inputs).1.join(inputs).2;
+        document.getElementById("Para1") = paragraph1
+    }
+</script>
+
+<style>
+    body
+    {
+        text-align: center;
+        background-color: deepskyblue;
+    }
+</style>
