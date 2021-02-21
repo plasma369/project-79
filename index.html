@@ -1,120 +1,15 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-        <title>project 79</title>
+        <title>project 81</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-        
-    <body>
-        <ul id="nav_bar">
-            <li class="links"><a href="#home">HOME</a></li>
-            <li class="links"><a href="#menu">VIEW MENU</a></li>
-            <li class="links"><a href="#menu">ADD MENU</a></li>
-        </ul>
-        <section id="home">
-        <ul id="menu_in_home">
-            <li>cheese pizza</li>
-            <li>pepperony pizza</li>
-            <li>pineapple pizza</li>
-            <li>meat lovers pizza</li>
-        </ul>
-        </section>
-        <div id="divider"></div>
-        <section id="menu">
-            <center>
-            <div>
-                <span>
-                    <span>
-                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
-                        <p>cheese pizza</p>
-                    </span>
+    <body class="body_background">
+        <center>
+            <canvas id="canvas" width="800" height=600></canvas>
+        </center>
 
-                    <span>
-                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
-                        <p>pepperony pizza</p>
-                    </span>
-                </span>
-                    <br>
-                <span>
-                    <span>
-                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
-                        <p>pineapple pizza</p>
-                    </span>
+        <script src="main.js"></script>
 
-                    <span>
-                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
-                        <p>meat lovers pizza</p>
-                    </span>
-                </span>
-            </div>
-            </center>
-        </section>
     </body>
-
-    <script>
-            var menu = ["cheese pizza", "pepperony pizza", "pineapple pizza" "meat lovers pizza"];
-    </script>
-
-    <style>
-        #home
-        {
-            background-image: url(https://www.biggerbolderbaking.com/wp-content/uploads/2019/07/15-Minute-Pizza-WS-Thumbnail.png);
-            height: 700px;
-        }
-
-        #menu
-        {
-            background-image: url(https://www.seriouseats.com/images/2017/04/20170411-pizza-oven-testing-roccbox-best-1500x1125.jpg);
-            height: 700px;
-        }
-
-        #nav_bar
-        {
-            background-color: rgb(225, 225, 225);
-            position: fixed;
-            width: 100%;
-            margin-top: 0px;
-            top: 0px;
-            z-index: 10;
-        }
-
-        .links
-        {
-            display: inline;
-            color: rgb(255, 255, 255);
-            padding-left: 35px;
-            padding-right: 25px;
-            font-family: fantasy;
-            font-size: 20px;
-        }
-
-        #menu_in_home
-        {
-            text-align: right;
-            font-family: fantasy;
-            font-size: 15px;
-            margin-right: 100px;
-            margin-top:24px;
-        }
-
-        #divider
-        {
-            height: 50px;
-            background-color: rgb(72, 72, 72);
-        }
-
-        .pizzas
-        {
-            height: 50px;
-        }
-
-        p
-        {
-            background-color: rgb(72, 72, 72);
-            color:#fff;
-            font-family: fantasy;
-            font-size: 20px;
-        }
-    </style>
-
 </html>
