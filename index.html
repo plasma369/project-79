@@ -1,75 +1,120 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <title>project 80</title>
+        <title>project 79</title>
     </head>
-
+        
     <body>
-        <h1>Make pragraphs from input boxes suing join function</h1>
-        <br><br>
-
-        <span>
+        <ul id="nav_bar">
+            <li class="links"><a href="#home">HOME</a></li>
+            <li class="links"><a href="#menu">VIEW MENU</a></li>
+            <li class="links"><a href="#menu">ADD MENU</a></li>
+        </ul>
+        <section id="home">
+        <ul id="menu_in_home">
+            <li>cheese pizza</li>
+            <li>pepperony pizza</li>
+            <li>pineapple pizza</li>
+            <li>meat lovers pizza</li>
+        </ul>
+        </section>
+        <div id="divider"></div>
+        <section id="menu">
+            <center>
             <div>
-                <span>1. </span>
-                <input type="text" id="para1_input_box_1" placeholder="Input Box 1">
-                <br><br>
-                <span>2. </span>
-                <input type="text" id="para1_input_box_2" placeholder="Input Box 2">
-                <br>
-                <button onclick="getParagraph1()">Get Paragraph</button>
-                <br><br>
-                <h2 id="Para1"></h2>
-            </div>
+                <span>
+                    <span>
+                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
+                        <p>cheese pizza</p>
+                    </span>
 
-            <div>
-                <span>1. </span>
-                <input type="text" id="para2_input_box_1" placeholder="Input Box 1">
-                <br><br>
-                <span>2. </span>
-                <input type="text" id="para2_input_box_2" placeholder="Input Box 2">
-                <br>
-                <button onclick="getParagraph2();">Get Paragraph</button>
-                <br><br>
-                <h3 id="Para2"></h3>
+                    <span>
+                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
+                        <p>pepperony pizza</p>
+                    </span>
+                </span>
+                    <br>
+                <span>
+                    <span>
+                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
+                        <p>pineapple pizza</p>
+                    </span>
+
+                    <span>
+                        <img class="pizzas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbhgwuKV6yyi9fPfUiUdj5CAaCqjvI40lOQ&usqp=CAU">
+                        <p>meat lovers pizza</p>
+                    </span>
+                </span>
             </div>
-        </span>
+            </center>
+        </section>
     </body>
+
+    <script>
+            var menu = ["cheese pizza", "pepperony pizza", "pineapple pizza" "meat lovers pizza"];
+    </script>
+
+    <style>
+        #home
+        {
+            background-image: url(https://www.biggerbolderbaking.com/wp-content/uploads/2019/07/15-Minute-Pizza-WS-Thumbnail.png);
+            height: 700px;
+        }
+
+        #menu
+        {
+            background-image: url(https://www.seriouseats.com/images/2017/04/20170411-pizza-oven-testing-roccbox-best-1500x1125.jpg);
+            height: 700px;
+        }
+
+        #nav_bar
+        {
+            background-color: rgb(225, 225, 225);
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            top: 0px;
+            z-index: 10;
+        }
+
+        .links
+        {
+            display: inline;
+            color: rgb(255, 255, 255);
+            padding-left: 35px;
+            padding-right: 25px;
+            font-family: fantasy;
+            font-size: 20px;
+        }
+
+        #menu_in_home
+        {
+            text-align: right;
+            font-family: fantasy;
+            font-size: 15px;
+            margin-right: 100px;
+            margin-top:24px;
+        }
+
+        #divider
+        {
+            height: 50px;
+            background-color: rgb(72, 72, 72);
+        }
+
+        .pizzas
+        {
+            height: 50px;
+        }
+
+        p
+        {
+            background-color: rgb(72, 72, 72);
+            color:#fff;
+            font-family: fantasy;
+            font-size: 20px;
+        }
+    </style>
+
 </html>
-
-<script>
-    function getParagraph1()
-    {
-        var inputs = [];
-
-        for (var i = 1 ; i <=2 ; i++)
-        {
-            inputs.push(document.getElementById("para1_input_box_" + i).value);
-            console.log(inputs);
-        }
-
-        var paragraph1 = (inputs).1.join(inputs).2;
-        document.getElementById("Para1") = paragraph1
-    }
-
-    function getParagraph2()
-    {
-        var inputs = [];
-
-        for (var i = 1 ; i <=2 ; i++)
-        {
-            inputs.push(document.getElementById("para1_input_box_" + i).value);
-            console.log(inputs);
-        }
-
-        var paragraph1 = (inputs).1.join(inputs).2;
-        document.getElementById("Para1") = paragraph1
-    }
-</script>
-
-<style>
-    body
-    {
-        text-align: center;
-        background-color: deepskyblue;
-    }
-</style>
